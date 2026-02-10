@@ -15,7 +15,7 @@ L’objectif est d’évaluer la capacité d’un algorithme de SLAM à estimer 
 **Premier essai: Utilisation d’une partie de la trajectoire (translation seulement)**   
 ***Reconstruction de la trajectoire – Séquence 1 (vid1)***
 
-![][images/image1.png]  
+![trajectoire 1](images/image1.png) 
 Le graphique présente la trajectoire 3D reconstruite de la caméra à travers une séquence d'images. Il visualise le chemin parcouru par votre caméra dans l'espace. La trajectoire est représentée par une ligne bleue, avec le début en vert et la fin en rouge.
 
 ### **Problème d’ambiguïté d’échelle en SLAM monoculaire**
