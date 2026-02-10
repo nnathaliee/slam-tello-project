@@ -35,7 +35,7 @@ Afin de limiter ces aberrations, un **facteur d’échelle a été intégré man
 
 Dans un premier temps, le **nuage de points** est difficile à interpréter dans une visualisation 2D. Il est donc plus pertinent de le représenter en **trois dimensions**, ce qui a été fait par la suite afin d’améliorer la compréhension de la scène reconstruite.
 
-![cloud points 1](images/image2.png) 
+![cloud points 1](images/image6.png) 
 
 Nous avons tenté d’améliorer la qualité de la reconstruction en intégrant une version simplifiée de **Ceres Solver** pour effectuer du **bundle adjustment**.  
  Le bundle adjustment permet d’optimiser simultanément :
