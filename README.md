@@ -35,7 +35,7 @@ Afin de limiter ces aberrations, un **facteur d’échelle a été intégré man
 
 Dans un premier temps, le **nuage de points** est difficile à interpréter dans une visualisation 2D. Il est donc plus pertinent de le représenter en **trois dimensions**, ce qui a été fait par la suite afin d’améliorer la compréhension de la scène reconstruite.
 
-![][image2]
+![cloud points 1](images/image2.png) 
 
 Nous avons tenté d’améliorer la qualité de la reconstruction en intégrant une version simplifiée de **Ceres Solver** pour effectuer du **bundle adjustment**.  
  Le bundle adjustment permet d’optimiser simultanément :
@@ -51,15 +51,15 @@ Une approche simplifiée a donc été mise en œuvre.
 **Deuxième essai: Amélioration avec le bundle adjusment**  
 ***Reconstruction de la trajectoire***
 
-![][image3]
+![trajectoire améliorée](images/image3.png) 
 
 La visualisation 2D reste toutefois peu lisible.
 
-![][image4]
+![cloud points](images/image4.png) 
 
 Une **visualisation 3D interactive** est disponible dans le *notebook*, ce qui permet une analyse plus pertinente de la scène reconstruite.
 
-![][image5]![][image6]
+![cloud points 3d](images/image5.png) ![video 1](images/image6.png) 
 
 **Interprétation*:***  
 Le nuage de points observé est globalement cohérent avec un drone avançant en ligne droite dans cet environnement. En effet, la scène est principalement constituée d’***un sol plat*** avec ***peu de relief*** et ***peu de structures verticales proches***, ce qui rend la reconstruction 3D difficile.   
@@ -84,6 +84,8 @@ Au lieu d’utiliser une vidéo, nous avons également travaillé à partir d’
 Contrairement à une vidéo, les images extraites individuellement présentent une meilleure netteté, car elles ne sont pas affectées par les effets de compression et de flou de mouvement. Cette meilleure qualité visuelle permet une détection plus fiable et plus précise des points caractéristiques (features), ce qui améliore la mise en correspondance entre les images successives.
 
 ***Reconstruction de la trajectoire***
+
+![trajectoire 2](images/image7.png) 
 
 Cette trajectoire représente le mouvement complet d’un drone reconstruit à partir d’une séquence de frames : le drone commence par avancer de façon relativement rectiligne, ce qui se traduit par des points presque alignés et une direction stable, puis il entre dans une phase où le déplacement spatial devient faible mais la direction change brusquement, indiquant une rotation sur lui-même (principalement autour de l’axe vertical, en lacet), avant de reprendre une progression vers l’avant dans une nouvelle direction après la rotation ; les petites irrégularités et zigzags observés entre certains points peuvent s’expliquer par le bruit des mesures ou la discrétisation frame par frame.  
 
