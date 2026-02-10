@@ -51,7 +51,7 @@ Une approche simplifiée a donc été mise en œuvre.
 **Deuxième essai: Amélioration avec le bundle adjusment**  
 ***Reconstruction de la trajectoire***
 
-![trajectoire améliorée](images/image3.png) 
+![trajectoire améliorée](images/image2.png) 
 
 La visualisation 2D reste toutefois peu lisible.
 
