@@ -59,7 +59,7 @@ La visualisation 2D reste toutefois peu lisible.
 
 Une **visualisation 3D interactive** est disponible dans le *notebook*, ce qui permet une analyse plus pertinente de la scène reconstruite.
 
-![cloud points 3d](images/image5.png) ![video 1](images/image6.png) 
+![cloud points 3d](images/image5.png) ![video 1](images/image3.png) 
 
 **Interprétation*:***  
 Le nuage de points observé est globalement cohérent avec un drone avançant en ligne droite dans cet environnement. En effet, la scène est principalement constituée d’***un sol plat*** avec ***peu de relief*** et ***peu de structures verticales proches***, ce qui rend la reconstruction 3D difficile.   
